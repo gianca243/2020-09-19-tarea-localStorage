@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/omg.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+        <a class="navbar-brand" href="#">
+            
+            <img src="./assets/img/knight.svg" class="img" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-end w-100">
+                <li class=" nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./assets/pages/lista.html">Lista de personajes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container mt-5">
+
+        <h1 class="text-center my-5 ">Registro de personaje</h1>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <form id="formRegistro">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="avatar">
+                          <option>dwarf</option>
+                          <option>elf</option>
+                          <option>knight</option>
+                          <option>ogre</option>
+                          <option>witch</option>
+                          <option>wizard</option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <label for="name">Nombre <small class="red">*</small> </label>
+                        <input type="text" class="form-control validarInput" id="name" required maxlength="20">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="cel">Edad</label>
+                        <input type="text" class="form-control validarInput" id="cel">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo</label>
+                        <input type="text" class="form-control validarInput" id="email">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/scripts/script.js"></script>
+    
+</body>
+</html>
